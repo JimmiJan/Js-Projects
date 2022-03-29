@@ -1,0 +1,286 @@
+*{
+    padding: 0%;
+    margin: 0%;
+text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 9.5rem,9%; */
+    /* border-bottom: 1px solid black; */
+    position: fixed;
+    padding-top: 19px;
+    padding-bottom: 5px;
+    left: 0;
+    background-color: rgba(189, 113, 0, 0.938);
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.h22{
+    display: none;
+}
+.logo h3{
+    color: black;
+    font-style: italic;
+    font-size: 30px;
+}
+header .links a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: black;
+
+}
+header .links a:hover{
+    color: rgb(245, 214, 175);
+}
+.Icons{
+    display: flex;
+    padding-left: 2px;
+}
+.Icons a{
+    font-size: 1.6rem;
+    padding-left: 10px;
+    color: black;
+}
+.Icons a:hover{
+    color: rgb(245, 214, 175);
+}
+#manu{
+    display: none;
+}
+header .seacrch-foem{
+    position: absolute;
+    top: 105%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+
+}
+header .seacrch-foem input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: black;
+    padding: 1rem;
+    text-transform: none;
+}
+header .seacrch-foem label{
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+    color: black;
+}
+section{
+    padding: 1.5rem 0%;
+}
+.content-h1{
+    background-image: url("./desi.avif");
+    background-position: right ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+}
+.h1with{
+    width: 46rem;
+    padding-left: 20px;
+}
+.h1with h1{
+    font-size: 40px;
+    
+}
+.h1with p{
+    font-size: 20px;
+}
+.Timmers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding-top: 10px;
+}
+.h1Tag h2{
+     font-size: 40px;
+
+}
+#Names{
+    text-align: center;
+    margin-top: 20px;
+}
+.Btns{
+    text-align: center;
+    padding-top: 8px;
+    
+}
+.Btnss{
+    padding: 15px;
+    font-size: 18px;
+    background-color: none !important;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+    html{
+        font-size: 70%;
+    }
+    header{
+        padding: 1.5rem 2rem;
+    }
+    .logo h3{
+        font-size: 25px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 912px) {
+    .content-h1{
+        background-image: url("./imgss.avif");
+        background-position: right;
+        text-align: center;
+    }
+    .h1with{
+        width: 86rem;
+        padding-left: 20px;
+    }
+    .h1with {
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+        
+    }
+  }
+
+
+  @media only screen and (max-width: 820px) {
+    .content-h1{
+        /* background-image: url("./imgss.avif"); */
+        background-position: center;
+    }
+    .h1with{
+        width: 86rem;
+        padding-left: 20px;
+    }
+    .h1with {
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+        
+    }
+  }
+
+  @media only screen and (max-width: 771px) {
+    html{
+        font-size: 90%;
+    }
+      #manu{
+          display: inline-block;
+      }
+     .links{
+          position: absolute;
+          top: 120%;
+          right: -100% ;
+          font-size: 30px;
+          background-color: rgba(189, 113, 0, 0.938);
+          width: 20rem;
+          height: 80vh;
+          /* display: none; */
+      }
+
+      header .links.active{
+          right: 0%;
+          /* display: block; */
+      }
+      header .links a{
+          display: block;
+          margin: 2rem;
+          padding: .5rem;
+
+      }
+      .logo h3{
+        font-size: 20px;
+    }
+    .h22{
+        display: block;
+    }
+    .content-h1{
+        background-image: url("./imgss.avif");
+        background-position: center;
+    }
+  }
