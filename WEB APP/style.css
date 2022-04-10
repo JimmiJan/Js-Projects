@@ -1,0 +1,420 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+
+:root {
+    --mainColor: #eef2f3;
+  }
+
+html {
+    /* font-size: 68; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: aliceblue;
+    color: #000;
+}
+
+.dark-mode{
+    background-color: #334d50;
+    color: white;
+}
+section{
+    padding-top: px;
+    /* position: absolute; */
+    position: relative;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #8e9eab;
+    padding-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+
+header h1 {
+    color: rgb(39, 38, 38);
+    cursor: pointer;
+}
+
+header .icons a {
+    font-size: 1.4rem;
+    /* margin: 1rem; */
+
+    color: rgb(70, 69, 69);
+    padding: 1rem;
+    text-transform: none;
+    text-decoration: none;
+
+
+    background:
+        linear-gradient(to right,
+            /* var(--mainColor) 0%, */
+            /* var(--mainColor) 5px, */
+            transparent 5px);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: #000;
+    padding-left:10px;
+    text-decoration: none;
+}
+
+header .icons a:hover {
+    background:
+       linear-gradient(
+         to right,
+         var(--mainColor) 0%,
+         var(--mainColor) 5px,
+         transparent
+       );
+  }
+
+ header .btms button{
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer
+  }
+  .dfold{
+      display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+h1:before {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 3px;
+    /* background-color: #61a3ff; */
+    background-color: #2C5364;
+
+    position: absolute;
+    left: 10;
+    bottom: -3px;
+    /* this is to match where the border is */
+    transform-origin: left;
+    transform: scale(0);
+    transition: 0.25s linear;
+    /*   will-change: transform; */
+}
+
+h1:hover:before {
+    transform: scale(1);
+}
+
+
+
+.bg{
+    background-image: url("./igs.avif");
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+
+}
+.mg{
+    background-image: url("./images.avif");
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+.hqtag{
+    /* width: 50%; */
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    /* flex-direction: column; */
+    /* height: 100vh; */
+    justify-content: center;
+    
+}
+.hastag{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+}
+.hastag .hs{
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    font-size: 2rem;
+    color: #000000;
+}
+.hastag p{
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    font-size: 1.7rem;
+    /* font-size: 2rem; */
+    color: #000000;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.helll{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+
+}
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+.container {
+  border-radius: 50%;
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.48);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 400px;
+}
+.container:after {
+  background-color: #f2f2f2;
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+.container:hover {
+  transform: scale(0.54);
+}
+.container-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -200px;
+}
+.circle {
+  background-color: #fee7d3;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 164px;
+  width: 340px;
+}
+.img2 {
+  left: -46px;
+  top: 174px;
+  width: 444px;
+}
+.img3 {
+  left: -16px;
+  top: 144px;
+  width: 466px;
+}
+.divider {
+  background-color: #ca6060;
+  height: 1px;
+  width: 160px;
+}
+.name {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.title {
+  color: #000000;
+  font-family: arial;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 880px) {
+    header .icons a{
+        font-size: 1.1rem;
+    }
+
+    h1:before {
+        content: "";
+        display: block;
+        width: 18%;
+        height: 3px;
+        /* background-color: #61a3ff; */
+        background-color: #2C5364;
+    
+        position: absolute;
+        left: 10;
+        bottom: -3px;
+        /* this is to match where the border is */
+        transform-origin: left;
+        transform: scale(0);
+        transition: 0.25s linear;
+        /*   will-change: transform; */
+    }
+    
+    h1:hover:before {
+        transform: scale(1);
+    }
+
+
+    .hastag .hs{
+        padding-top: 20%;
+        /* font-size: 1.3rem; */
+    }
+  }
+
+
+
+
+@media only screen and (max-width: 700px) {
+    header .icons{
+      /* display: none; */
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      display: block;
+      display: flex;
+      background-color: #2C5364;
+      width: 100%;
+      padding: 0 20% ;
+      flex-direction: column;
+      text-align: center;
+      /* padding: 20px; */
+    }
+    header .icons .active{
+        /* position: absolute; */
+        
+        right: 0% !important;
+    
+
+    }
+    .hastag .hs{
+        padding-top: 20%;
+        font-size: 1.3rem;
+    }
+    .hastag p{
+        /* padding-top: 20%; */
+        font-size: 1rem;
+    }
+
+
+    h1:before {
+        content: "";
+        display: block;
+        width: 18%;
+        height: 3px;
+        /* background-color: #61a3ff; */
+        background-color: #2C5364;
+    
+        position: absolute;
+        left: 10;
+        bottom: -3px;
+        /* this is to match where the border is */
+        transform-origin: left;
+        transform: scale(0);
+        transition: 0.25s linear;
+        /*   will-change: transform; */
+    }
+    
+    h1:hover:before {
+        transform: scale(1);
+    }
+    .dfold{
+        display: inline-block;
+    }
+}
+
+
+
